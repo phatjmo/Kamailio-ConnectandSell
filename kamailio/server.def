@@ -1,0 +1,15 @@
+#!substdef "/LOCALIP/10.40.1.101/g"
+#!substdef "/NATIP/52.11.110.181/g"
+
+#!substdef "/FQDN/cas-or-proxy-a01/g"
+#!substdef "/DBURL/mysql:\/\/kamailio:kamailio@localhost\/kamailio/g"
+#!substdef "/LOGTAG/From=\$si For To-URI=<\$tu> And CallID=<\$ci>/g"
+
+## Enable Features
+#!--define WITH_DEBUG
+#!define WITH_NAT
+#!--define RFC4028
+#!define WITH_MYSQL
+#!define WITH_LOADBALANCE
+#!define WITH_AUTH
+#!--define WITH_LCR
